@@ -4448,3 +4448,163 @@ hr.editormd-page-break {
 .editormd-theme-dark .CodeMirror {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/**learnku部分**/
+
+
+.editormd .CodeMirror pre {
+  padding: 0 15px;
+  line-height: 30px;
+}
+.CodeMirror-code {
+  margin-top: 15px;
+}
+
+.editormd .CodeMirror pre.CodeMirror-placeholder {
+  margin-top: 15px;
+}
+
+.editormd-grid-table-row img.emoji {
+  width: 28px;
+  height: 28px;
+}
+
+.editormd-dialog-container  .editormd-form input[type="text"] {
+  width: 264px!important;
+}
+
+.editormd-preview-container p.editormd-tex, .editormd-html-preview p.editormd-tex {
+text-align: center;
+margin: 25px;
+}
+.editormd-preview-container span.editormd-tex, .editormd-html-preview span.editormd-tex {
+margin: 0 5px;
+}
+.editormd-preview-container .emoji, .editormd-html-preview .emoji {
+width: 24px;
+height: 24px;
+}
+.editormd-preview-container .katex, .editormd-html-preview .katex {
+font-size: 1.6em;
+}
+
+.CodeMirror .CodeMirror-code .cm-tag {
+  color: #63a35c
+}
+
+.CodeMirror .CodeMirror-code .cm-attribute {
+  color: #795da3
+}
+
+.CodeMirror .CodeMirror-code .cm-string {
+  color: #a11
+}
+
+.CodeMirror .CodeMirror-selected {
+  background: #d9d9d9
+}
+
+.CodeMirror .CodeMirror-code .cm-header-1 {
+  font-size: 110%;
+  font-weight: 700;
+  color: #0aa4d8;
+  line-height: 200%
+}
+
+.CodeMirror .CodeMirror-code .cm-header-2 {
+  line-height: 160%;
+  font-size: 110%;
+  font-weight: 700;
+  color: #0aa4d8
+}
+
+.CodeMirror .CodeMirror-code .cm-header-3 {
+  font-size: 105%;
+  font-weight: 700;
+  color: #0aa4d8;
+  line-height: 125%
+}
+
+.CodeMirror .CodeMirror-code .cm-header-4 {
+  font-size: 102%;
+  font-weight: 700;
+  color: #0aa4d8;
+  line-height: 110%
+}
+
+.CodeMirror .CodeMirror-code .cm-header-5,.CodeMirror .CodeMirror-code .cm-header-6 {
+  font-size: 100%;
+  font-weight: 700;
+  color: #0aa4d8;
+  line-height: 110%
+}
+
+.CodeMirror .CodeMirror-code .cm-comment {
+  background: none;
+  border-radius: 2px;
+  color: #0aa4d8
+}
+
+.CodeMirror .CodeMirror-code .cm-link {
+  color: #7f8c8d
+}
+
+.CodeMirror .CodeMirror-code .cm-url {
+  color: #aab2b3
+}
+
+.CodeMirror .CodeMirror-code .cm-strikethrough {
+  text-decoration: line-through
+}
+
+.CodeMirror .CodeMirror-placeholder {
+  opacity: .5
+}
+
+.CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+  background: rgba(255,0,0,.15)
+}
+.editor-preview code, .editormd-preview-container code, .markdown-body code, .markdown-reply code {
+  color: #6f6d6d;
+}
+
+
+.markdown-body input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+
+.markdown-body html input[disabled] {
+cursor: default;
+}
+
+.markdown-body input {
+line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+}
+
+.markdown-body :checked + .radio-label {
+z-index: 1;
+position: relative;
+border-color: #4183c4;
+}
+
+li.editor-task-list {
+  list-style-type: none;
+}
+li.editor-task-list input[type="checkbox"]{
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle!important;
+}
+
+li.editor-task-list ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}

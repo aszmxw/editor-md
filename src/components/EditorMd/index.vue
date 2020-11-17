@@ -4,19 +4,15 @@
     class="main-editor"
   >
     <link
+      href="editor.md/css/editormd.css"
+      rel="stylesheet"
+    />
+    <link
       href="editor.md/css/editormd.min.css"
       rel="stylesheet"
     />
     <link
-      href="prism/markdown.scss"
-      rel="stylesheet"
-    />
-    <link
       href="prism/prism.css"
-      rel="stylesheet"
-    />
-    <link
-      href="jquery.tocify/jquery.tocify.css"
       rel="stylesheet"
     />
     <textarea
@@ -59,6 +55,8 @@ export default {
       default() {
         return {
           path: 'editor.md/lib/',
+          lineNumbers: true,      // 编辑器显示行号
+          previewCodeHighlight: false,  // 关闭预览 HTML 的代码块高亮，默认开启
           height: 1000,
           taskList: true,
           tex: true, // 默认不解析
@@ -161,6 +159,7 @@ cond(no)->op
     // 加载依赖""
     $s([
       `js/jquery.min.js`,
+      `prism/prism.js`,
       `editor.md/lib/raphael.min.js`,
       `editor.md/lib/flowchart.min.js`,
     ], () => {
@@ -174,15 +173,6 @@ cond(no)->op
       ], () => {
         $s(`editor.md/editormd.js`, () => {
           this.initEditor()
-        })
-        $s([
-          `prism/prism.js`,
-          `jquery-ui/jquery-ui.min.js`,
-          `jquery.tocify/jquery.tocify.min.js`,
-        ], () => {
-          $s(`prism/iszmxw.js`, () => {
-            new MarkdownBody();
-          });
         })
       })
     }
@@ -327,6 +317,8 @@ cond(no)->op
 
       // 高亮关键字
       if (this.keyword) $('#' + this.id).mark(this.keyword)
+
+      Prism.highlightAll()
     },
 
     // 转义
