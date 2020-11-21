@@ -1,6 +1,8 @@
 // vue.config.js
 module.exports = {
   // 选项...
+  publicPath: './',
+  outputDir: 'docs',
   chainWebpack: config => {
     config.module
       .rule('md')
