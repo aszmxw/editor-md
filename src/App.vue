@@ -12,7 +12,7 @@
 // 引入组件
 import Editormd from '@/components/EditorMd'
 // 引入markdown文件示例
-// import demo from './assets/demo.md'
+import demo from './assets/demo.md'
 export default {
   name: 'App',
   components: {
@@ -26,7 +26,7 @@ export default {
   methods: {
     get_content() {
       // markdown内容读取，设置到content中
-      this.content = ``
+      this.content = demo
     }
   },
   mounted() {
