@@ -8,10 +8,6 @@
       rel="stylesheet"
     />
     <link
-      href="editor.md/css/editormd.min.css"
-      rel="stylesheet"
-    />
-    <link
       href="prism/prism.css"
       rel="stylesheet"
     />
@@ -63,7 +59,7 @@ export default {
           flowChart: true, // 默认不解析
           sequenceDiagram: true, // 默认不解析
           syncScrolling: 'single',
-          htmlDecode: 'style,script,iframe|filterXSS',
+          htmlDecode: true, // 识别和解析HTML标签
           imageUpload: true,
           imageFormats: ['jpg', 'jpeg', 'gif', 'png', 'bmp', 'webp', 'JPG', 'JPEG', 'GIF', 'PNG', 'BMP', 'WEBP'],
           imageUploadURL: '/api/page/uploadImg',
