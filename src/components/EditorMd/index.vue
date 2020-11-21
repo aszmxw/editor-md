@@ -180,7 +180,6 @@ cond(no)->op
     for (var i = 1; i < 999; i++) {
       window.clearInterval(i)
     }
-
     // window.removeEventListener('beforeunload', e => this.beforeunloadHandler(e))
   },
   methods: {
@@ -204,7 +203,7 @@ cond(no)->op
     insertValue(insertContent) {
       this.instance.insertValue(this.html_decode(insertContent))
     },
-
+    // 获取编辑器内的文档内容
     getMarkdown() {
       return this.instance.getMarkdown()
     },

@@ -1,24 +1,33 @@
-# editor-md
+# editor-md 整合成Vue组件
 
-## Project setup
+## 效果图
+![demo01](./public/images/demo01.png)
+
+- 下面是vue-element-template引用的
+
+![demo02](./public/images/demo02.png)
+
+## 运行demo
+
+### 第一步
+```
+git clone https://github.com/aszmxw/editor-md.git
+```
+
+### 第二步
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 第三步
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 参考了以下项目
+- [x] showdoc
+- [x] learnku
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
