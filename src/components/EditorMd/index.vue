@@ -51,6 +51,7 @@ export default {
       default() {
         return {
           path: 'editor.md/lib/',
+          placeholder: '请使用 Markdown 语法',
           lineNumbers: true,      // 编辑器显示行号
           previewCodeHighlight: false,  // 关闭预览 HTML 的代码块高亮，默认开启
           height: 1000,
