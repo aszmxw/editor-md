@@ -2,7 +2,7 @@
 module.exports = {
   // 选项...
   publicPath: './',
-  outputDir: 'docs',
+  outputDir: 'editor-md',
   chainWebpack: config => {
     config.module
       .rule('md')
