@@ -100,14 +100,14 @@
 }
 
 .editormd-toolbar {
-  width: 100%;
+  width: 100% !important;
   min-height: 37px;
   background: #fff;
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 10;
+  left: 0 !important;
+  z-index: 1001;
   border-bottom: 1px solid #ddd;
 }
 
@@ -270,6 +270,7 @@
   position: fixed;
   z-index: 99999;
   display: none;
+  height: auto!important;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3578,6 +3579,7 @@
   word-wrap: normal;
   background-color: transparent;
   border: 0;
+  color: #d1d2d2;
 }
 
 .markdown-body pre code:before, .markdown-body pre code:after {
@@ -4121,6 +4123,9 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 
 .markdown-body .highlight pre, .markdown-body pre {
   line-height: 1.6;
+  margin: 1.5em 0;
+  padding: 15px;
+  background: #384548;
 }
 
 hr.editormd-page-break {
@@ -4358,6 +4363,7 @@ hr.editormd-page-break {
   left: 0;
   border: none;
   margin: 0 auto;
+  z-index: 1001;
 }
 
 /* Editor.md Dark theme */
